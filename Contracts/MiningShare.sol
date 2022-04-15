@@ -7,7 +7,7 @@ contract MiningShare {
 
 
     // 召集人 owner
-    address private owner = (address) 0x0;
+    address private owner = address(0);
     // 召集人设置募资时间
     uint private closeBlock = 0;
     // 投资者：
