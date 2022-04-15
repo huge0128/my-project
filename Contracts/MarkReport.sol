@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: BJTU
+// IPLab Contracts >=0.7.0 (MarkReport.sol)
+
 pragma solidity >=0.7.0;
 
 // switch 
@@ -35,7 +38,7 @@ contract MarkReport {
         return MarkHistory[msg.sender].reporters;
     }
 
-    
+
     event LogMarkInfo(address controller, address reporter, uint value);
     function getMarkInfo() public {
         for(uint i = 0; i < MarkHistory[msg.sender].reporters.length; i++) {
